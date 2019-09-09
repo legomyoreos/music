@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Marvin's Tunes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="background-container">
+        <img src="" id="background-image">
+    </div>
+    <img src="img/logo_2.png" id="logo"/>
+  <div class="container">
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <img src="img/childish-thumb.jpg" id="currentArt">
+                <!-- <span class="left" id="npAction">Paused...</span> -->
+                <div id="songInfo">
+                    <p id="npTitle"></p>
+                    <p id="npArtist"></p>
+                    <p id="npLength"></p>
+                </div>
+            </div>
+            <div id="btns_time">
+                <div id="tracks">
+                    <div id="btnPrev"><img src="img/backbutton.png"></div>
+                    <div id="songControl"><img src="img/play.png"></div>
+                    <div id="btnNext"><img src="img/nextbutton.png"></div>
+                </div>
+                <div id="npTrackTime">
+                        <p id="currentTime">0:00</p>
+                        <progress id="seekbar" value="0" max="1" style="width:300px;"></progress>
+                        <p id="songLength">0:00</p>
+                </div>
+            </div>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+                </div>
+            </div>
+            <div id="plwrap">
+                <ul>
+                    <li>
+                        <div class="plColTitle">
+                            <div class="plTitle col-3">Title</div>
+                            <div class="plArtist col-3">Artist</div>
+                            <div class="plAlbum col-3">Album</div>
+                            <div class="plLength">Length</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="plList">
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle col-3">Redbone</div>
+                            <div class="plArtist col-3">Childish Gambino</div>
+                            <div class="plAlbum col-3">"Awaken My Love!"</div>
+                            <div class="plLength">5:27</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle col-3">I Am</div>
+                            <div class="plArtist col-3">Jorja Smith</div>
+                            <div class="plAlbum col-3">Black Panther</div>
+                            <div class="plLength">3:28</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle col-3">DNA.</div>
+                            <div class="plArtist col-3">Kendrick Lamar</div>
+                            <div class="plAlbum col-3">DAMN.</div>
+                            <div class="plLength">4:45</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle col-3">One Dance</div>
+                            <div class="plArtist col-3">Drake</div>
+                            <div class="plAlbum col-3">Views</div>
+                            <div class="plLength col-3">2:54</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle col-3">Thinkin' Bout You</div>
+                            <div class="plArtist col-3">Frank Ocean</div>
+                            <div class="plAlbum col-3">Channel Orange</div>
+                            <div class="plLength">3:20</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<script src='https://api.html5media.info/1.1.8/html5media.min.js'></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
